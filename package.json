@@ -1,0 +1,32 @@
+{
+  "name": "matrix-easter-egg",
+  "version": "0.0.1",
+  "description": "Matrix easter egg with konami code.",
+  "homepage": "https://github.com/xchilenox/matrix-easter-egg",
+  "author": "Rodrigo Albornoz <rodrigo.albornoz.f@gmail.com>",
+  "license": "MIT",
+  "main": [
+    "./dist/matrix.js",
+    "./dist/matrix.min.js"
+  ],
+  "keywords": [
+    "Matrix",
+    "easter",
+    "egg"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xchilenox/matrix-easter-egg.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xchilenox/matrix-easter-egg/issues"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.1",
+    "jshint": "^2.9.1",
+    "jshint-stylish": "^2.1.0"
+  }
+}
