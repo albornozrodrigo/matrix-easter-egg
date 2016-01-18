@@ -87,11 +87,11 @@ var Matrix = (function() {
             arrayIndex++;
             setTimeout(function() {
                 if(arrayIndex < messages.length) {
-                    target.innerHTML = '';
                     writeText(arrayIndex, 0);
                 } else {
                     matrix.hideTag();
                 }
+                target.innerHTML = '';
             }, 700);
         }
     }
