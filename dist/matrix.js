@@ -79,19 +79,20 @@ var Matrix = (function() {
         var message = messages[arrayIndex];
 
         if(wordPosition < message.length) {
-            target.innerHTML = target.innerHTML + message[wordPosition++];
+            target.innerHTML = target.innerHTML + message[wordPosition];
+            wordPosition++;
             setTimeout(function() {
-                writeText(arrayIndex, wordPosition);
+                matrix.writeText(arrayIndex, wordPosition);
             }, 400);
         } else {
             arrayIndex++;
             setTimeout(function() {
+                target.innerHTML = '';
                 if(arrayIndex < messages.length) {
-                    writeText(arrayIndex, 0);
+                    matrix.writeText(arrayIndex, 0);
                 } else {
                     matrix.hideTag();
                 }
-                target.innerHTML = '';
             }, 700);
         }
     }
