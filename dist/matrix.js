@@ -24,7 +24,7 @@ var Matrix = (function() {
     function getMessages() {
         return [
             ' ',
-            '███████████████████████',
+            '█████████████████████',
             ' ',
             '█',
             ' ',
@@ -56,7 +56,6 @@ var Matrix = (function() {
         tag.style.top = 0;
         tag.style.zIndex = 999999;
         document.body.appendChild(tag);
-        return document.getElementById('matrix');
     }
 
     function showTag() {
@@ -93,7 +92,7 @@ var Matrix = (function() {
                 } else {
                     matrix.hideTag();
                 }
-            }, 700);
+            }, 800);
         }
     }
 

@@ -19,7 +19,7 @@ gulp.task('default', ['lint'], function(done) {
 });
 
 gulp.task('lint', function() {
-	return gulp.src(file)
+	gulp.src(file)
 	.pipe(jshint())
 	.pipe(jshint.reporter('jshint-stylish'))
 	.pipe(jshint.reporter('fail'));
